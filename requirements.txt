@@ -1,0 +1,4 @@
+# Requirements for the codebase Markdown generator
+# This script uses only Python standard library modules
+# No external dependencies required
+# Python 3.6+

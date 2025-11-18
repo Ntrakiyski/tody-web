@@ -1,0 +1,126 @@
+{
+  "hero": {
+    "enabled": true,
+    "data": {
+      "label": "HUMAN &",
+      "labelAccent": "AI",
+      "heading": "Smart systems build for real people",
+      "subheading": "Where Product Design meets AI & Machine Learning",
+      "ctaText": "Book free call",
+      "ctaLink": "#contact",
+      "heroImage": "/images/home/hero-crystals.png"
+    }
+  },
+  "logos": {
+    "enabled": true,
+    "data": {
+      "heading": "Tech we work with",
+      "logos": [
+        "/images/home/cursor-logo.svg",
+        "/images/home/cursor-logo.svg",
+        "/images/home/cursor-logo.svg",
+        "/images/home/cursor-logo.svg",
+        "/images/home/cursor-logo.svg"
+      ]
+    }
+  },
+  "usps": {
+    "enabled": true,
+    "data": {
+      "heading": "Building intelligence into your product",
+      "subtitle": "ML engineers that work backwards—and I understand what work for humans—not just algorithms.",
+      "cards": [
+        {
+          "icon": "/images/home/icon-ai-integration.svg",
+          "title": "AI Integration",
+          "description": "Seamlessly integrate AI capabilities into your existing products"
+        },
+        {
+          "icon": "/images/home/icon-chatbots.svg",
+          "title": "AI Chatbots",
+          "description": "Build intelligent conversational interfaces"
+        },
+        {
+          "icon": "/images/home/icon-custom-apps.svg",
+          "title": "Custom AI apps",
+          "description": "Develop tailored AI solutions for your specific needs"
+        },
+        {
+          "icon": "/images/home/icon-product-design.svg",
+          "title": "Product Design",
+          "description": "Design AI-powered products that users love"
+        }
+      ]
+    }
+  },
+  "projects": {
+    "enabled": true,
+    "data": {
+      "heading": "Machine Learning & AI",
+      "subtitle": "Hands-on experience building with Neural Networks, LLMs, and autonomous agents.",
+      "projects": [
+        {
+          "slug": "whitepaper-extraction",
+          "title": "RAG - Whitepaper data extraction",
+          "description": "Reduced manual efforts reduced time by 95% while achieving 98% retrieval accuracy"
+        },
+        {
+          "slug": "meeting-agent",
+          "title": "Real-time meeting agent",
+          "description": "The use of RLHF (RL) has been used to train AI to train for meeting, editing, and scheduling tasks"
+        },
+        {
+          "slug": "patient-detection",
+          "title": "Patient detection system",
+          "description": "An autonomous system that predicts and analyzes patient flow within a clinic setting"
+        }
+      ]
+    }
+  },
+  "about": {
+    "enabled": true,
+    "data": {
+      "label": "for now",
+      "heading": "One person team",
+      "name": "I'm Gloria",
+      "paragraph": "Hi, Gloria — a product designer, based in Bulgaria, with 8 years of experience in UX/UI, product, web & mobile design. I specialize in creating intuitive, user-centered experiences that balance aesthetics with functionality. My work spans across various industries, from SaaS to e-commerce, where I've helped companies transform their digital products into seamless, scalable solutions. I believe great design is not just about how it looks, but how it works.\n\nAfter years of working in product design, I've developed a deep passion for AI and machine learning. I've started to bridge these worlds—using design thinking to make AI more accessible and human-centered. Whether it's designing AI-powered features or exploring how ML can enhance user experiences, I'm constantly learning and experimenting at the intersection of design and technology.",
+      "image": "/images/home/gloria-photo.png"
+    }
+  },
+  "experiences": {
+    "enabled": true,
+    "data": {
+      "heading": "Product Design",
+      "subtitle": "This is my working experience company-wide with just a few selected projects",
+      "experiences": [
+        {
+          "slug": "tida",
+          "company": "TIDA",
+          "description": "Redesigning onboarding & business intelligence tool"
+        },
+        {
+          "slug": "treeveo",
+          "company": "Treeveo",
+          "description": "Redesigning a marketplace for SaaS..."
+        },
+        {
+          "slug": "unum",
+          "company": "UNUM",
+          "description": "Redesign & unification of the client platform"
+        }
+      ]
+    }
+  },
+  "cta": {
+    "enabled": true,
+    "data": {
+      "heading": "Interested in my approach to solving problems?",
+      "subtitle": "I'm currently seeking opportunities in:",
+      "tags": [
+        "AI/ML Architecture",
+        "Product design"
+      ],
+      "image": "/images/home/cta-crystals.png"
+    }
+  }
+}
