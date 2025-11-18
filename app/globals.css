@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  /* Design system colors */
+@theme {
+  /* Colors - these are correct */
   --color-gradient-start: #E46337;
   --color-gradient-end: #FFC947;
   --color-dark-primary: #101010;
@@ -18,28 +16,49 @@
   --color-accent-orange: #E46337;
   --color-accent-green: #22C55E;
   --color-accent-red: #EF4444;
-}
-
-@theme {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-gradient-start: var(--color-gradient-start);
-  --color-gradient-end: var(--color-gradient-end);
-  --color-dark-primary: var(--color-dark-primary);
-  --color-dark-secondary: var(--color-dark-secondary);
-  --color-light-primary: var(--color-light-primary);
-  --color-light-secondary: var(--color-light-secondary);
-  --color-text-white: var(--color-text-white);
-  --color-text-dark: var(--color-text-dark);
-  --color-text-medium: var(--color-text-medium);
-  --color-text-muted: var(--color-text-muted);
-  --color-accent-blue: var(--color-accent-blue);
-  --color-accent-orange: var(--color-accent-orange);
-  --color-accent-green: var(--color-accent-green);
-  --color-accent-red: var(--color-accent-red);
+  
+  /* Font families - use --font-* namespace */
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-heading: 'Bricolage Grotesque', sans-serif;
-  --font-size-hero: 100px;
+  --font-heading: 'Bricolage Grotesque', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* Font sizes - use --text-* namespace */
+  --text-h1-mobile: 48px;
+  --text-h1-mobile--line-height: 1.2;
+  
+  --text-h1-desktop: 72px;
+  --text-h1-desktop--line-height: 1.2;
+  
+  --text-h2-desktop: 48px;
+  --text-h2-desktop--line-height: 1.2;
+  
+  --text-h2-mobile: 36px;
+  --text-h2-mobile--line-height: 1.2;
+  
+  --text-h3: 20px;
+  --text-h3--line-height: 1.5;
+  
+  --text-h4: 14px;
+  --text-h4--line-height: 1.5;
+  
+  --text-body: 18px;
+  --text-body--line-height: 1.5;
+  
+  --text-small: 14px;
+  --text-small--line-height: 1.5;
+  
+  --text-xs: 12px;
+  --text-xs--line-height: 1.5;
+  
+  /* Spacing and radius */
+  --spacing-section-padding: 80px;
+  --spacing-section-padding-lg: 120px;
+  --spacing-container: 1280px;
+  --spacing-grid-gap: 32px;
+  --spacing-card-padding: 24px;
+  --spacing-section-min-h: 728px;
+  --radius-card: 16px;
+  --radius-button: 8px;
+  --radius-image: 16px;
 }
 
 /* Smooth scrolling */
@@ -51,5 +70,3 @@ html {
 * {
   box-shadow: none;
 }
-
-/* font-family can be removed since we set it on the body in layout.tsx */

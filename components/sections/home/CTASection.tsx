@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Heading from '@/components/ui/Heading';
 import Badge from '@/components/ui/Badge';
+import Paragraph from '@/components/ui/Paragraph';
 
 interface CTASectionProps {
   data: {
@@ -33,9 +34,9 @@ const CTASection: React.FC<CTASectionProps> = ({ data }) => {
           <Heading variant="h2" className="text-text-white mb-6">
             {data.heading}
           </Heading>
-          <p className="text-text-muted text-body mb-8">
+          <Paragraph className="text-text-muted mb-8">
             {data.subtitle}
-          </p>
+          </Paragraph>
           
           <div className="flex flex-wrap gap-3 mt-10">
             {data.tags.map((tag, index) => (

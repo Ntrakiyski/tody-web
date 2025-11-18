@@ -25,14 +25,14 @@ const Button: React.FC<ButtonProps> = ({
   let sizeClasses = '';
   switch (size) {
     case 'sm':
-      sizeClasses = 'px-3 py-1.5 text-sm';
+      sizeClasses = 'px-3 py-1.5 text-small';
       break;
     case 'lg':
-      // Updated lg size classes
+      // Updated lg size classes - use design system padding
       sizeClasses = 'px-8 py-3 text-body'; // Use theme font sizes
       break;
     default: // md
-      sizeClasses = 'px-6 py-2.5 text-base';
+      sizeClasses = 'px-6 py-2.5 text-body'; // Use theme font sizes
       break;
   }
 

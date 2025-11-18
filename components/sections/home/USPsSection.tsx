@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Heading from '@/components/ui/Heading';
 import Card from '@/components/ui/Card';
+import Paragraph from '@/components/ui/Paragraph';
 
 interface USPsSectionProps {
   data: {
@@ -19,15 +20,15 @@ interface USPsSectionProps {
 
 const USPsSection: React.FC<USPsSectionProps> = ({ data }) => {
   return (
-    <section className="bg-light-primary py-28">
+    <section className="bg-light-primary py-section-padding">
       <div className="container mx-auto max-w-7xl px-6">
         <div className="text-center mb-16">
           <Heading variant="h2" className="text-text-dark mb-4">
             {data.heading}
           </Heading>
-          <p className="text-text-medium text-body max-w-2xl mx-auto">
+          <Paragraph className="text-text-medium max-w-2xl mx-auto">
             {data.subtitle}
-          </p>
+          </Paragraph>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -46,9 +47,9 @@ const USPsSection: React.FC<USPsSectionProps> = ({ data }) => {
                 <Heading variant="h4" className="text-text-dark mb-2">
                   {card.title}
                 </Heading>
-                <p className="text-text-medium text-body">
+                <Paragraph className="text-text-medium">
                   {card.description}
-                </p>
+                </Paragraph>
               </div>
             </Card>
           ))}

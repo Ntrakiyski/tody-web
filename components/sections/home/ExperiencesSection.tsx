@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Heading from '@/components/ui/Heading';
 import Card from '@/components/ui/Card';
+import Paragraph from '@/components/ui/Paragraph';
 import { ArrowUpRight } from 'lucide-react'; // Import a proper icon
 
 interface ExperiencesSectionProps {
@@ -21,15 +22,15 @@ interface ExperiencesSectionProps {
 const ExperiencesSection: React.FC<ExperiencesSectionProps> = ({ data }) => {
   return (
     // CHANGE BACKGROUND TO LIGHT THEME, CENTER INTRO TEXT
-    <section className="bg-light-primary py-20">
+    <section className="bg-light-primary py-section-padding">
       <div className="container mx-auto max-w-7xl px-6">
         <div className="text-center mb-16 max-w-2xl mx-auto"> {/* Center aligned text */}
           <Heading variant="h2" className="text-text-dark mb-4">
             {data.heading}
           </Heading>
-          <p className="text-text-medium text-body">
+          <Paragraph className="text-text-medium">
             {data.subtitle}
-          </p>
+          </Paragraph>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -45,9 +46,9 @@ const ExperiencesSection: React.FC<ExperiencesSectionProps> = ({ data }) => {
                     <ArrowUpRight className="text-text-medium h-6 w-6" /> {/* Medium color icon */}
                   </div>
                   <div className="flex-1 mt-auto">
-                    <p className="text-text-medium text-small"> {/* Use smaller text and medium color */}
+                    <Paragraph size="small" className="text-text-medium"> {/* Use smaller text and medium color */}
                       {experience.description}
-                    </p>
+                    </Paragraph>
                   </div>
                 </div>
               </Card>

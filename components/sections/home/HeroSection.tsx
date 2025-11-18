@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image'; // Use Next.js Image component
 import Button from '@/components/ui/Button'; // Use our Button component
+import Heading from '@/components/ui/Heading'; // Use our Heading component
+import Paragraph from '@/components/ui/Paragraph'; // Use our Paragraph component
 
 interface HeroData {
   label: string;
@@ -27,13 +29,13 @@ const HeroSection: React.FC<HeroProps> = ({ data }) => {
           {data.label} & {data.labelAccent}
         </span>
 
-        <h1 className="mt-4 text-h1-mobile lg:text-hero-xl font-bold text-text-white">
+        <Heading variant="h1" className="mt-4 text-text-white">
           {data.heading}
-        </h1>
+        </Heading>
 
-        <p className="mt-6 text-body text-text-muted max-w-2xl mx-auto">
+        <Paragraph className="mt-6 text-text-muted max-w-2xl mx-auto">
           {data.subheading}
-        </p>
+        </Paragraph>
 
         <div className="mt-10">
           <Button href={data.ctaLink} variant="ghost" size="lg">

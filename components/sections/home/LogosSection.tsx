@@ -12,7 +12,7 @@ interface LogosSectionProps {
 const LogosSection: React.FC<LogosSectionProps> = ({ data }) => {
   return (
     // Change background to light, adjust padding
-    <section className="bg-light-primary py-12">
+    <section className="bg-light-primary py-12"> {/* This section uses custom padding not in design system */}
       <div className="container mx-auto max-w-7xl px-6">
         {/* Add the heading */}
         <h3 className="text-center text-text-muted text-h3 mb-12">

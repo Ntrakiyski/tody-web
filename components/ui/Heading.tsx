@@ -6,15 +6,15 @@ interface HeadingProps {
   className?: string;
 }
 
-const Heading: React.FC<HeadingProps> = ({ 
-  variant = 'h2', 
-  children, 
-  className = '' 
+const Heading: React.FC<HeadingProps> = ({
+  variant = 'h2',
+  children,
+  className = ''
 }) => {
   const headingClasses = {
-    h1: 'text-hero-large md:text-[72px] font-bold leading-tight font-heading', // Larger hero
-    h2: 'text-h2-desktop sm:text-h2-mobile font-bold leading-tight font-heading',
-    h3: 'text-h3 font-bold leading-tight font-heading', // Bold for cards
+    h1: 'text-h1-mobile lg:text-h1-desktop font-bold leading-tight font-heading',
+    h2: 'text-h2-mobile lg:text-h2-desktop font-bold leading-tight font-heading',
+    h3: 'text-h3 font-bold leading-tight font-heading',
     h4: 'text-h4 font-semibold leading-tight font-heading',
   };
 

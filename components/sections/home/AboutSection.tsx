@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Heading from '@/components/ui/Heading';
+import Paragraph from '@/components/ui/Paragraph';
 
 interface AboutSectionProps {
   data: {
@@ -17,7 +18,7 @@ interface AboutSectionProps {
 const AboutSection: React.FC<AboutSectionProps> = ({ data }) => {
   return (
     // CHANGE BG TO LIGHT THEME
-    <section className="bg-light-primary py-20">
+    <section className="bg-light-primary py-section-padding">
       <div className="container mx-auto max-w-7xl px-6">
         <div className="flex flex-col lg:flex-row items-center gap-x-20 gap-y-12">
           {/* Text on left - adjusted to take more space */}
@@ -28,9 +29,9 @@ const AboutSection: React.FC<AboutSectionProps> = ({ data }) => {
             <Heading variant="h2" className="text-text-dark my-4">
               {data.heading}
             </Heading>
-            <p className="text-text-medium text-body leading-relaxed">
+            <Paragraph className="text-text-medium">
               {data.paragraph}
-            </p>
+            </Paragraph>
           </div>
           {/* Image on right - adjusted to take less space */}
           <div className="lg:w-2/5 w-full">
